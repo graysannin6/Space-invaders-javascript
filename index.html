@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    
+    <div id="canvas">
+        <section id="Score">
+            <p id="scoreContainer"><span>Score:</span> <span id="scoreElement">0</span></p>
+        </section>
+    <canvas></canvas>
+    <div class="overlay">
+        <div class="Title">
+        <h1>Definitely not Space Invaders</h1>
+        <div class="button">
+        <img src="Button.png" alt="StartButton">
+        <span>Start</span>
+        </div>
+       
+        </div>
+    </div>
+    <div class="Gameover">
+        <div class="Restart">
+        <h1 class="GameOver">Game Over</h1>
+        <h1 class="Points">300</h1>
+        <p >Points</p>
+        <div class="Restartbutton">
+        <img src="Button.png" alt="StartButton">
+        <span>Restart</span>
+        </div>
+        </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" 
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" 
+    integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="audio.js"></script>
+    <script src="Util.js"></script>
+    <script src="./js/classes/Player.js"></script>
+    <script src="./js/classes/Invader.js"></script>
+    <script src="./js/classes/Bomb.js"></script>
+    <script src="./js/classes/Projectile.js"></script>
+    <script src="./js/classes/Grid.js"></script>
+    <script src="./js/classes/Particle.js"></script>
+    <script src="./js/classes/PowerUp.js"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>

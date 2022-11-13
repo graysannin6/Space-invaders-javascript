@@ -1,0 +1,103 @@
+body{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: sans-serif;
+}
+#canvas{
+    position: relative;
+}
+#Score
+{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    left: 10px;
+    top: 10px;
+}
+#Score p{
+    margin: 0;
+    display: none;
+    
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('StartScreen.png');
+    z-index: 20;
+    background-size: contain;
+    background-repeat: no-repeat ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay span{
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+.button
+{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+.Title{
+    text-align: center;
+}
+.Title h1{
+    color: white;
+}
+.Gameover
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('StartScreen.png');
+    z-index: 20;
+    background-size: contain;
+    background-repeat: no-repeat ;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.Gameover span{
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+.Restartbutton
+{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+.Restart{
+    text-align: center;
+}
+.GameOver{
+    color: white;
+    font-size: 24px;
+}
+.Restart p{
+    color: white;
+    margin-top: 0;
+}
+.Points 
+{
+    color: white;
+    margin: 0;
+    font-size: 48px;
+}
